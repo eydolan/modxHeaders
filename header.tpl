@@ -36,8 +36,8 @@
     <meta name="permatitle" content="[[*alias]]">
     <meta name="creditline" content="[[++site_name]]">
     <meta name="byline" content="[[*author:default=`[[++site_name]]`]]">
-    <meta name="publisheddate" content="[[*publishedon:date=`%d-%m-%y`]]">
-    <meta name="datemodified" content="[[*publishedon:date=`%d-%m-%y`]]">
+    <meta name="publisheddate" content="[[*publishedon:is=`0`:then=`[[*createdon:date=`%Y-%m-%d`]]`:else=`[[*publishedon:date=`%Y-%m-%d`]]`]]">
+    <meta name="datemodified" content="[[*publishedon:date=`%Y-%m-%d`]]">
     <meta name="breadcrumb" content="[[!pdoCrumbs? &tpl=`@INLINE [[+menutitle]]` &tplCurrent=`@INLINE [[+menutitle]]` &tplMax=`@INLINE ` &tplHome=`@INLINE [[+menutitle]]` &tplWrapper=`@INLINE [[+output]]` &showHome=`1` &showAtHome=`1` &showCurrent=`1` &hideSingle=`0` &outputSeparator=`/`]]">
     <meta name="sitename" content="[[++site_name]]">
     <meta name="author" content="[[+createdby:userProfile=`fullname`]] - [[++site_name]]">
