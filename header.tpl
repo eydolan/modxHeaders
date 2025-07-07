@@ -5,13 +5,15 @@
 <head>
     <base href="[[!++site_url]]">
 
+    [[!+ss_meta.meta_title]]
+
     <!-- Essential Meta Tags -->
     <meta charset="[[++modx_charset:default=`utf-8`]]">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Title and Description -->
-    [[!+ss_meta.meta_title]]
+    
     [[!+ss_meta.meta_description:default=`<meta name="description" content="[[*introtext:default=`[[*pagetitle]]`]]">`]]
     [[!+ss_meta.keywords]]
     [[!+ss_meta.robots:default=`<meta name="robots" content="index, follow">`]]
@@ -28,15 +30,6 @@
 
     <!-- Format Detection -->
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-
-    <!-- Critical Resource Hints -->
-    <link rel="preconnect" href="[[++site_url]]">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-
-    <!-- Canonical URL -->
-    [[!+ss_meta.canonical:default=`<link rel="canonical" href="[[++site_url]][[~[[*id]]]]">`]]
 
     <!-- Open Graph Meta Tags -->
     [[!+ss_meta.og_title:default=`<meta property="og:title" content="[[*pagetitle:stripTags:htmlentities]]">`]]
@@ -71,9 +64,6 @@
     <meta name="geo.region" content="[[++site_region]]">
     <meta name="geo.country" content="[[++site_country]]">
 
-    <!-- Robots.txt Reference -->
-    <link rel="robots" href="[[++robots_page]]">
-
     <!-- Mobile and App Meta Tags -->
     <meta name="theme-color" content="[[++defaultColor]]" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="[[++defaultColorDark]]" media="(prefers-color-scheme: dark)">
@@ -84,6 +74,16 @@
     <meta name="msapplication-TileColor" content="[[++defaultColor]]">
     <meta name="msapplication-config" content="[[~[[++browserconfigpage]]]]">
 
+    <!-- Canonical URL -->
+    [[!+ss_meta.canonical:default=`
+    <link rel="canonical" href="[[++site_url]][[~[[*id]]]]">`]]
+
+    <!-- Critical Resource Hints -->
+    <link rel="preconnect" href="[[++site_url]]">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
     <!-- Favicons and Icons -->
     <link rel="icon" type="image/svg+xml" href="[[++logosvg]]">
     <link rel="icon" type="image/png" href="[[++logofav:pthumb=`w=32&h=32&zc=1&f=png`]]" sizes="32x32">
@@ -93,6 +93,9 @@
     <link rel="apple-touch-icon" href="[[++logofav:pthumb=`w=120&h=120&zc=1&f=png`]]" sizes="120x120">
     <link rel="mask-icon" href="[[++logofav:pthumb=`w=124&h=124&zc=1&f=svg`]]" color="[[++defaultColor]]">
     <link rel="manifest" href="[[++sitemanifest]]">
+  
+    <!-- Robots.txt Reference -->
+    <link rel="robots" href="[[~[[++robots_page]]]]">
 
     <!-- Web App Links -->
     <link rel="webauthor" href="[[~[[++humanspage]]]]" type="text/plain">
