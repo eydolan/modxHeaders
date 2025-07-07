@@ -92,9 +92,6 @@
     <link rel="apple-touch-icon" href="[[++logofav:pthumb=`w=64&h=64&zc=1&f=png`]]">
     <link rel="manifest" href="[[++sitemanifest]]">
     <link rel="mask-icon" href="[[++logofav:pthumb=`w=124&h=124&zc=1&f=png`]]" color="[[++defaultColor]]">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="[[!modxMinify?&group=`css`]]">
     <script type="application/ld+json">
         [[$socialJsonTpl]]
