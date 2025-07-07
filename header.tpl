@@ -1,4 +1,4 @@
- [[!SeoSuiteMeta? &toPlaceholders=`1` &tpl=`seoMetaTpl` &tplSocial=`seoMetaSocialTpl`]]
+[[!SeoSuiteMeta? &toPlaceholders=`1` &tpl=`seoMetaTpl` &tplSocial=`seoMetaSocialTpl`]]
 <!DOCTYPE html>
 <html dir="ltr" lang="[[++locale]]">
 <head>
@@ -7,19 +7,16 @@
     <meta charset="[[++modx_charset:default=`utf-8`]]">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    [[!+ss_meta.meta_description:default=`<meta name="description" content="[[*introtext:default=`[[*pagetitle]]`]]">`]]
+    <meta name="description" content="[[*introtext:default=`[[*pagetitle]]`]]">
     [[!+ss_meta.keywords]]
-    [[!+ss_meta.robots:default=`<meta name="robots" content="index, follow">`]]   
+    <meta name="robots" content="index, follow">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Cache-Control" content="public, max-age=31536000">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="date=no">
-    <meta name="format-detection" content="address=no">
-    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
     [[!+ss_meta.og_title]]
     [[!+ss_meta.og_description]]
     [[!+ss_meta.og_type]]
@@ -96,4 +93,3 @@
     <script type="application/ld+json">
         [[$socialJsonTpl]]
     </script>
-</head>
